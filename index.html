@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Calcola la media di n numeri</title>
+<script type="text/javascript">
+var n = 0;
+var totale = 0; // somma totale dei valori immessi
+
+function aggiungiValore (val) {
+    totale = totale + parseFloat(val);
+    n++;
+}
+
+function calcolaMedia () {
+    alert('La media è ' + (totale/n).toString());
+    n = 0;
+    totale = 0;
+}
+
+</script>
+</head>
+
+<body>
+  <form name="form1">
+    <label>Valore: kswdflhswdjklsdkl </label>
+    <input name="nuovoValore" type="text" value="0" size="5"/>
+    <input name="nuovoValore2" type="text" value="0" size="5"/>
+    <input name="inserito" type="button" value="Aggiungi" onclick="aggiungiValore(document.form1.nuovoValore.value)"/>
+
+    <input name="inserito" type="button" value="Calcola" onclick="calcolaMedia();"/>
+  </form>
+</body>
+
+</html>
