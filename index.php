@@ -3,7 +3,7 @@
   <head>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title> calcola medisdfgsdra</title>
+    <title> calcola media by gabbo</title>
   </head>
   <body>
       <div class="col-sm-3">
