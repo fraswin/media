@@ -19,6 +19,7 @@ var calcolaAritmetica = function(){
   });
 
   alert(media/size);
+  media, size=0;
 }
 
 //((voto * cfu)+(n) ) / somma(cfu)
@@ -33,9 +34,15 @@ var calcolaPonderata = function(){
       sommaCfu = sommaCfu + parseInt($( this ).val());
     }
   });
+  if(sommaCfu==0) {
+    alert('completa i valori piciu');
+    return
+  }
+  else {
+    //$['button-role="ponderata"'].removeClass('disabled');
+  }
   var sommaVal=0;
   for(var i = 0; i<voti.length;i++){
-    debugger;
     if($('body').find($('[media-target="voto"]')[i]).val()!='') {
       sommaVal = sommaVal + (
         (parseInt($('body').find($('[media-target="voto"]')[i]).val()))*
@@ -43,4 +50,11 @@ var calcolaPonderata = function(){
     }
   }
   alert(sommaVal/sommaCfu);
+  sommaCfu, sommaVal=0;
+}
+
+var resetInput = function(){
+  $('body').find($('input')).each(function(){
+    $(this).val('');
+  });
 }

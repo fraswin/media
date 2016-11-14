@@ -1,12 +1,12 @@
 <html>
 <!DOCTYPE html>
   <head>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <meta charset="utf-8">
     <title> calcola media by gabbo</title>
   </head>
-  <body>
-      <div class="col-sm-3">
+  <body class="row">
+      <div class="col s3">
         <div class="input-group">
 
           <?php for($i=0; $i<9;$i++){ ?>
@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col s3">
         <div class="input-group">
 
           <?php for($k=0; $k<9;$k++){ ?>
@@ -26,10 +26,11 @@
         </div>
       </div>
 
-      <a class="btn btn-primary" onclick="calcolaAritmetica()">
+      <a class="btn" onclick="calcolaAritmetica()">
         calcola media semplice
       </a>
-    <a class="btn bnt-primary" onclick="calcolaPonderata()">Calcola media ponderata</a>
+    <a class="btn" button-role="ponderata" onclick="calcolaPonderata()">Calcola media ponderata</a>
+    <a class="btn" onclick="resetInput()">Reset</a>
   </body>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
