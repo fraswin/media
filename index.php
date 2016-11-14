@@ -10,7 +10,7 @@
         <div class="input-group">
 
           <?php for($i=0; $i<9;$i++){ ?>
-            <input type="number" class="form-control" placeholder="inserisci voto"  media-target="voto" media-ref="<?php echo $i ?>">
+            <input type="number" class="form-control" placeholder="inserisci voto"  media-target="voto" value="" media-ref="<?php echo $i ?>">
           <?php } ?>
 
         </div>
@@ -26,10 +26,10 @@
         </div>
       </div>
 
-      <a class="btn btn-primary" onclick="calcola()">
+      <a class="btn btn-primary" onclick="calcolaAritmetica()">
         calcola media semplice
       </a>
-    <a class="btn bnt-primary" onclick="calcolaMediaPonderata()">Calcola media ponderata</a>
+    <a class="btn bnt-primary" onclick="calcolaPonderata()">Calcola media ponderata</a>
   </body>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
